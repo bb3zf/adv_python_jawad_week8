@@ -1,0 +1,16 @@
+import numpy as np
+
+feature = np.array([10.0, 20.2, 30.5])
+weights = np.array([5.7, 10.0, 15.3])
+
+arr_sum = feature + weights
+feature_mul = feature * 2.0
+weights_mul = weights * 2.0
+arr_norm = np.linalg.norm(arr_sum)
+
+print("feature shape:", feature.shape)
+print("weight shape:", weights.shape)
+print("arr_sum:", arr_sum, "shape:", arr_sum.shape)
+print("feature_mul:", feature_mul, "shape:", feature_mul.shape)
+print("weights_mul:", weights_mul, "shape:", weights_mul.shape)
+print("arr_norm:", arr_norm)
