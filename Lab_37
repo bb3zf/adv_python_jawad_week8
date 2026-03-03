@@ -1,0 +1,10 @@
+import numpy as np
+
+a = np.array([1.0, 2.0, 3.0])
+b = np.array([0.5, 1.0, 1.5])
+
+dot_product = np.dot(a, b)
+cosine_similarity = np.dot(a, b) / (np.linalg.norm(a)* np.linalg.norm(b))
+
+print("dot result ", dot_product)
+print("cos (a / b) ", cosine_similarity)
